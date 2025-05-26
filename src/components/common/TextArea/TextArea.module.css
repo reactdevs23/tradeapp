@@ -1,0 +1,23 @@
+.textArea {
+  color: var(--Primitive-900);
+  background: transparent;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-overflow: ellipsis;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  scroll-behavior: auto;
+  height: 100%;
+}
+
+.textArea::placeholder {
+  color: var(--Primitive-400);
+}

@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+.buttonContainer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  width: calc(100% - 32px);
+
+  padding-top: 8px;
+  padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  background: var(--Primitive-900);
+
+  z-index: 100;
+}
+.buttonContainer .backToWalletButton {
+  padding-bottom: 0;
+}

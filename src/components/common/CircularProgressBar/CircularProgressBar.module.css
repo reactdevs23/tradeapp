@@ -1,0 +1,19 @@
+.container {
+  display: inline-block;
+  position: relative;
+}
+
+.svg {
+  transform: rotate(-90deg);
+}
+
+.background {
+  fill: none;
+  stroke: var(--Blue-15);
+}
+
+.progress {
+  fill: none;
+  stroke: #3981f880; /* Indigo */
+  transition: stroke-dashoffset 0.5s ease;
+}

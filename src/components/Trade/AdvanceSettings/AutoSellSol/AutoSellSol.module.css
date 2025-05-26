@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 16px;
+  border-radius: 0;
+  background: var(--Primitive-800);
+}
+
+.wrapper .line {
+  background: var(--Primitive-700);
+  opacity: 0.5;
+}
+.targetValue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px 12px;
+}
+.inputWrapper {
+  border-radius: 6px;
+  background: var(--Primitive-900);
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 90px;
+  width: 100%;
+}
+
+.inputWrapper .input {
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+.inputWrapper .input input {
+  color: var(--Primitive-0);
+  font-size: 16px;
+  line-height: 150%;
+}
+.percentIcon {
+  color: var(--Primitive-400);
+  font-size: 14px;
+}
+@media only screen and (max-width: 360px) {
+  .box {
+    gap: 4px;
+    padding: 6px;
+  }
+  .price {
+    padding: 9px 6px;
+  }
+}

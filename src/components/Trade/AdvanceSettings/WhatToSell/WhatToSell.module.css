@@ -1,0 +1,63 @@
+.sellWhenContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2px;
+}
+.box {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  min-height: 40px;
+  background: var(--Primitive-900);
+}
+.activeBox {
+  border: 1px solid var(--Blue-20);
+  background: var(--Blue-10);
+}
+
+.allSol {
+  border-radius: 8px 8px 2px 2px;
+  padding: 10px 12px;
+}
+.speceficAmount {
+  padding: 4px 12px;
+}
+.onlyThisTrade {
+  border-radius: 2px 2px 8px 8px;
+}
+.label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--Primitive-300);
+}
+.activeBox .label {
+  color: var(--Blue-50);
+}
+.icon {
+  color: var(--Primitive-300);
+}
+.activeBox .icon {
+  color: var(--Blue-100);
+}
+.container .input {
+  border: none;
+  background: var(--Primitive-900);
+  max-width: 90px;
+  width: 100%;
+  padding: 5px 12px;
+}
+.container .input input {
+  color: var(--Primitive-0);
+  font-size: 14px;
+  line-height: 142.85%;
+}

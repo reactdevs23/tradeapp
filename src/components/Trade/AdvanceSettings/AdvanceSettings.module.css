@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 100px;
+}
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--Primitive-800);
+}
+.active.header {
+  border-radius: 12px 12px 0 0;
+}
+
+.icon {
+  color: var(--Primitive-500);
+  font-size: 20px;
+}

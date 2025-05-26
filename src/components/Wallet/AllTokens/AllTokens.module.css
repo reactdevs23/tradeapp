@@ -1,0 +1,78 @@
+.tableContainer {
+  background: var(--Primitive-950);
+  border-radius: 20px 20px 0px 0px;
+
+  overflow: hidden;
+
+  overflow-x: auto;
+  padding: 16px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+  width: 100%;
+}
+.heading {
+  white-space: nowrap;
+}
+.header .input {
+  max-width: 148px;
+  background: var(--Primitive-900);
+  margin-left: auto;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.row {
+  border-top: 1px solid var(--Primitive-900);
+}
+.row:last-child {
+  border: none;
+}
+.cell {
+  padding: 12px;
+  font-size: 14px;
+
+  vertical-align: middle;
+}
+
+.coinInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 20px;
+}
+
+.logo {
+  max-width: 24px;
+  width: 100%;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.nameAndAmount {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  white-space: nowrap;
+}
+.amount {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+.positive {
+  color: var(--Green);
+}
+
+.negative {
+  color: var(--Red);
+}

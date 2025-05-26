@@ -1,0 +1,67 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Hide native input */
+.inputField {
+  display: none;
+}
+
+/* Custom Input Field Styling */
+.inputWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.customInput:hover {
+  background-color: #2a2a2a;
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+}
+
+/* Label Styling */
+.label {
+  white-space: nowrap;
+}
+
+.customInput .active {
+  color: var(--Primitive-0);
+}
+
+/* Icons */
+.icon {
+  color: var(--Primitive-700);
+  font-size: 18px;
+}
+
+.arrow {
+  font-size: 14px;
+  color: var(--Primitive-500);
+  cursor: pointer;
+  margin-left: auto;
+}
+.input::placeholder {
+  color: var(--Primitive-600);
+}
+.activeIcon {
+  color: var(--Primitive-50);
+}

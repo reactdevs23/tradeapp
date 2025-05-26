@@ -1,0 +1,51 @@
+.sellWhenContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2px;
+}
+.box {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  background: var(--Primitive-900);
+  min-height: 40px;
+}
+.activeBox {
+  border: 1px solid var(--Blue-20);
+  background: var(--Blue-10);
+}
+.percentage {
+  border-radius: 8px 8px 2px 2px;
+}
+.price {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: center;
+  border-radius: 2px 2px 8px 8px;
+  padding: 9px 12px;
+}
+.label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--Primitive-300);
+}
+.activeBox .label {
+  color: var(--Blue-50);
+}
+.icon {
+  color: var(--Primitive-300);
+}
+.activeBox .icon {
+  color: var(--Blue-100);
+}

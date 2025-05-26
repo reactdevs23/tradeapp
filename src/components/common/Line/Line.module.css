@@ -1,0 +1,7 @@
+.line {
+  height: 1px;
+  min-height: 1px;
+  max-height: 1px;
+  width: 100%;
+  background: var(--Primitive-900);
+}

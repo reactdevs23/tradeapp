@@ -1,0 +1,23 @@
+.securityAnalysis {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-radius: 4px;
+  background: var(--Primitive-800);
+  padding: 12px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+  flex-wrap: wrap;
+}
+.showMoreButton {
+  font-size: 13px;
+  line-height: 123.077%;
+  border-radius: 20px;
+}
+.info {
+  opacity: 0.6;
+}

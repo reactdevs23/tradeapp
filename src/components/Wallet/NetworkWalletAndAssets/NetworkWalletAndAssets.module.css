@@ -1,0 +1,13 @@
+.selectBoxContainer,
+.addressAndAmount {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.selectBoxContainer .wallet {
+  border-radius: 0;
+}
+.selectBoxContainer .assets {
+  border-radius: 2px 2px 12px 12px;
+}

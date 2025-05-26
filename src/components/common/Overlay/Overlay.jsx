@@ -1,0 +1,19 @@
+import { MdClose } from "react-icons/md";
+import classes from "./Overlay.module.css";
+import clsx from "clsx";
+import { useScroll } from "@/hooks/useScroll";
+
+const Overlay = ({ className }) => {
+  const { hasScrolled, isScrollingUp } = useScroll();
+  return (
+    <div
+      className={clsx(
+        classes.overlay,
+        isScrollingUp && classes.isScrollingUp,
+        className,
+        !hasScrolled && classes.noBg
+      )}
+    ></div>
+  );
+};
+export default Overlay;

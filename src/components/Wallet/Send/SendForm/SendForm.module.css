@@ -1,0 +1,83 @@
+.addressAndAmount {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.qrCode {
+  max-width: 18px;
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+.addressContaner,
+.amountContaner,
+.feeAndSending {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 12px 12px 2px 2px;
+  background: var(--Primitive-800);
+}
+.feeAndSending {
+  border-radius: 12px;
+}
+.amountContaner {
+  gap: 12px;
+  border-radius: 2px 2px 12px 12px;
+}
+.labelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 6px 12px;
+}
+.addressInput input {
+  font-size: 16px;
+  color: var(--Primitive-200);
+}
+.addressAndAmount .addressInput,
+.addressAndAmount .amountInput {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+.amountInput input {
+  font-size: 28px;
+  line-height: 114.286%;
+  font-weight: 500;
+  color: var(--Primitive-200);
+}
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px 12px;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.maxButton {
+  border-radius: 4px;
+  padding: 2px 8px;
+
+  border-radius: 4px;
+  background: var(--Blue-10);
+  color: var(--Blue-500);
+  font-weight: 700;
+}
+.sending {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo {
+  max-width: 20px;
+  width: 100%;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  border-radius: 0;
+}

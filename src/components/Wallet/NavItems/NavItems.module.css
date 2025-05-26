@@ -1,0 +1,45 @@
+.navItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  transition: 0.3s;
+}
+.navItem:hover .iconContainer {
+  background: var(--Primitive-950);
+  border: 1px solid var(--Primitive-700);
+}
+.item {
+  transition: 0.3s;
+}
+.navItem:hover .item {
+  color: var(--Primitive-0);
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  border: 1px solid var(--Primitive-800);
+  background: var(--Primitive-900);
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.icon {
+  max-width: 24px;
+  width: 100%;
+}

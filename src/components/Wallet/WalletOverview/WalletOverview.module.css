@@ -1,0 +1,54 @@
+.sliderContainer {
+  width: 100%;
+
+  margin: 0 auto;
+  position: relative;
+}
+
+.swiper {
+  border-radius: 16px;
+}
+
+/* Image style inside the slide */
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Slide style */
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:global(.swiper) {
+  padding-bottom: 16px;
+}
+/* Place pagination dots below the slider */
+:global(.swiper-pagination) {
+  position: absolute;
+  bottom: 0px !important;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+
+/* All dots style */
+:global(.swiper-pagination-bullet) {
+  width: 6px;
+  height: 6px;
+  background: var(--Primitive-700);
+  border-radius: 6px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  margin: 0 2px !important;
+}
+
+/* Active dot expanded */
+:global(.swiper-pagination-bullet-active) {
+  width: 16px;
+  background: var(--Blue-500);
+}

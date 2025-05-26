@@ -1,0 +1,56 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+.box {
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  background: var(--Primitive-800);
+  border: 1px solid var(--Primitive-800);
+}
+.outerCircle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--Primitive-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--Blue-500);
+}
+.box .innerCircle {
+  display: none;
+}
+.active .innerCircle {
+  display: block;
+}
+.active.box {
+  border: 1px solid var(--Blue-500);
+}
+.active .outerCircle {
+  border: 1px solid var(--Blue-500);
+}
+.titleAndDuration {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
