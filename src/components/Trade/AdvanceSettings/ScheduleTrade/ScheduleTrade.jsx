@@ -1,6 +1,6 @@
 import { useState } from "react";
 import classes from "./ScheduleTrade.module.css";
-import SellBox from "../SellBox/SellBox";
+import SellBox from "../../../common/SellBox/SellBox";
 import { scheduleTradeIcon } from "@/images";
 import { Line, WarningContainer, DateTimeInput } from "@/components/common";
 const ScheduleTrade = () => {

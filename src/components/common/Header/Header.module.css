@@ -10,10 +10,11 @@
   width: 100%;
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 0px;
   background: var(--Primitive-900);
   padding-top: 16px;
   padding-bottom: 8px;
+  z-index: 100;
 }
 .side {
   width: 24px;

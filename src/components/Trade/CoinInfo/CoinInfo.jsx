@@ -78,19 +78,22 @@ const CoinInfo = ({ change = -6.34 }) => {
           </Text>
         </div>
       </div>
-      <Line className={classes.line} />
+
       {showSecrityAnalysis ? (
         <SecurityAnalysis />
       ) : (
-        <Button
-          transparent
-          wFull
-          className={classes.securityButton}
-          onClick={() => setShowSecurityAnalysis(true)}
-        >
-          <img src={securityIcon} alt="#" className={classes.securityIcon} />{" "}
-          Run AI Security Analysis
-        </Button>
+        <>
+          <Line className={classes.line} />
+          <Button
+            transparent
+            wFull
+            className={classes.securityButton}
+            onClick={() => setShowSecurityAnalysis(true)}
+          >
+            <img src={securityIcon} alt="#" className={classes.securityIcon} />{" "}
+            Run AI Security Analysis
+          </Button>
+        </>
       )}
     </div>
   );

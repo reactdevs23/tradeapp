@@ -1,4 +1,4 @@
-import AmountBox from "@/components/Trade/AmountBox/AmountBox";
+import AmountBox from "@/components/Trade/AdvanceSettings/AmountBox/AmountBox";
 import classes from "./TradePage.module.css";
 import { useState } from "react";
 import clsx from "clsx";
@@ -6,30 +6,35 @@ import { AiOutlineSwap } from "react-icons/ai";
 import NetworkAndExchange from "@/components/Trade/NetworkAndExchange/NetworkAndExchange";
 import { exchangeList, networks, tokenList } from "@/data/data";
 import SelectToken from "@/components/Modals/SelectToken/SelectToken";
-import CoinInfo from "@/components/Trade/CoinInfo/CoinInfo";
+
 import { Button } from "@/components/common";
 import { addToCartIcon } from "@/images";
 import AdvanceSettings from "@/components/Trade/AdvanceSettings/AdvanceSettings";
+import { useTrade } from "@/Context/TradeContext";
 const payingPercentages = ["25%", "50%", "75%", "100%"];
 
 const TradePage = () => {
-  // network and exchange
-  const [selectedNetwork, setSelectedNetwork] = useState(networks[0]);
-  const [selectedExchange, setSelectedExchange] = useState(exchangeList[0]);
+  const {
+    selectedNetwork,
+    setSelectedNetwork,
+    selectedExchange,
+    setSelectedExchange,
+    selectedPayingToken,
+    setSelectedPayingToken,
+    selectedReceivingToken,
+    setSelectedReceivingToken,
+    activePercentage,
+    setActivePercentage,
+    payingAmount,
+    setPayingAmount,
+    receivingAmount,
+    setReceivingAmount,
+  } = useTrade();
 
-  // pay and receive
-  const [activePercentage, setActivePercentage] = useState("25%");
-  const [selectedPayingToken, setSelectedPayingToken] = useState(tokenList[0]);
   const [isPayingTokenModalActive, setIsPayingTokenModalActive] =
     useState(false);
-
-  const [selectedReceivingToken, setSelectedReceivingToken] = useState(
-    tokenList[1]
-  );
   const [isReceivingTokenModalActive, setIsReceivingTokenModalActive] =
     useState(false);
-  const [payingAmount, setPayingAmount] = useState("");
-  const [receivingAmount, setReceivingAmount] = useState("");
 
   return (
     <>
@@ -77,7 +82,7 @@ const TradePage = () => {
             usdBalance={870.42}
           />
         </div>
-        <CoinInfo />
+
         <AdvanceSettings />
 
         <div className={classes.buttonContainer}>

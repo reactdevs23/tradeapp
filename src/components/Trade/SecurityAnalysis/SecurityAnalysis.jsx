@@ -15,7 +15,7 @@ bullish, sustainability is questionable without continuous inflow and
 demand. Overall, it's a high-risk, high-reward asset likely driven
 by community hype or social catalysts.`;
 
-  const previewText = info.slice(0, 132) + "...";
+  const previewText = info.slice(0, 160) + "...";
 
   return (
     <div className={classes.securityAnalysis}>
@@ -23,7 +23,7 @@ by community hype or social catalysts.`;
         <Heading primitive200 lsm medium>
           AI Security Analysis
         </Heading>
-        <Button sm green10 onClick={() => {}}>
+        <Button xs green10 onClick={() => {}}>
           Low Risk
         </Button>
       </div>

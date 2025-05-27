@@ -5,13 +5,16 @@ import App from "./App";
 
 import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from "@/utils/utils.js";
+import TradeProvider from "./Context/TradeContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ScrollToTop />
-      <App />
+      <TradeProvider>
+        <App />
+      </TradeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

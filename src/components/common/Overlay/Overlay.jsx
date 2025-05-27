@@ -3,7 +3,7 @@ import classes from "./Overlay.module.css";
 import clsx from "clsx";
 import { useScroll } from "@/hooks/useScroll";
 
-const Overlay = ({ className }) => {
+const Overlay = ({ className, type2 }) => {
   const { hasScrolled, isScrollingUp } = useScroll();
   return (
     <div
@@ -11,7 +11,8 @@ const Overlay = ({ className }) => {
         classes.overlay,
         isScrollingUp && classes.isScrollingUp,
         className,
-        !hasScrolled && classes.noBg
+        !hasScrolled && classes.noBg,
+        type2 && classes.type2
       )}
     ></div>
   );

@@ -11,6 +11,8 @@ import SendPage from "./pages/WalletPage/SendPage/SendPage";
 import ReceivePage from "./pages/WalletPage/ReceivePage/ReceivePage";
 import TradePage from "./pages/TradePage/TradePage";
 import TradeLayout from "./Layout/TradeLayout/TradeLayout";
+import TradeCarts from "./pages/TradePage/TradeCarts/TradeCarts";
+import TradingChart from "./pages/TradePage/TradingChart/TradingChart";
 
 function App() {
   return (
@@ -30,8 +32,9 @@ function App() {
 
             {/* Trade star */}
             <Route path="/" element={<TradeLayout />}>
-              <Route path="/trade" element={<TradePage />} />
+              <Route path="trade" element={<TradingChart />} />
             </Route>
+            <Route path="/trade-cart" element={<TradeCarts />} />
             {/* Trade end */}
           </Route>
           <Route path="*" element={<NotFound />} />

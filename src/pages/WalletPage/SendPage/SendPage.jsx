@@ -106,16 +106,6 @@ const SendPage = () => {
             </Button>
           </>
         )}
-        {step === STEPS.REQUEST_SUBMITTED && (
-          <Button
-            transparent
-            to="/wallet"
-            wFull
-            className={classes.backToWalletButton}
-          >
-            Back To Wallet
-          </Button>
-        )}
       </div>
     </div>
   );

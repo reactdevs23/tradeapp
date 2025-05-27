@@ -24,6 +24,8 @@ import SelectBox from "./SelectBox/SelectBox";
 import WarningContainer from "./WarningContainer/WarningContainer";
 import CircularCheckBox from "./CircularCheckBox/CircularCheckBox";
 import DateTimeInput from "./DateTimeInput/DateTimeInput";
+
+import SellBox from "./SellBox/SellBox";
 export {
   Wrapper,
   Button,
@@ -48,4 +50,5 @@ export {
   WarningContainer,
   CircularCheckBox,
   DateTimeInput,
+  SellBox,
 };

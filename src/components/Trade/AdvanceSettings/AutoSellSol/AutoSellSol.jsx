@@ -1,5 +1,5 @@
 import { autoSellIcon } from "@/images";
-import SellBox from "../SellBox/SellBox";
+import SellBox from "../../../common/SellBox/SellBox";
 import classes from "./AutoSellSol.module.css";
 import { useState } from "react";
 import { handleKeyDown } from "@/utils/utils";

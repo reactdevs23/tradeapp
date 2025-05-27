@@ -34,7 +34,10 @@ const NavItems = () => {
         ))}
       </nav>
       <div className={classes.side}>
-        <IconButton className={classes.cartContainer}>
+        <IconButton
+          className={classes.cartContainer}
+          onClick={() => navigate("/trade-cart")}
+        >
           <img src={cartIcon} alt="Cart" className={classes.cartIcon} />
           <p className={classes.itemNumber}>1</p>
         </IconButton>

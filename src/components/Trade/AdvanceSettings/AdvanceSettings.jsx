@@ -2,7 +2,7 @@ import { IconButton, Line, Text } from "@/components/common";
 import classes from "./AdvanceSettings.module.css";
 import { IoSettingsOutline } from "react-icons/io5";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-import SellBox from "./SellBox/SellBox";
+import SellBox from "../../common/SellBox/SellBox";
 import { useState } from "react";
 import { scheduleTradeIcon } from "@/images";
 import clsx from "clsx";

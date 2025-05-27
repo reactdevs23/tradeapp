@@ -1,0 +1,27 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--Primitive-900);
+  padding: 2px;
+}
+.tab {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  line-height: 133.33%;
+  font-weight: 500;
+  color: var(--Primitive-500);
+  background: transparent;
+}
+.tab:hover {
+  transform: none;
+}
+.tab.active {
+  color: var(--Blue-500);
+  background: var(--Blue-10);
+}
+.tab.loss {
+  color: var(--Orange);
+  background: var(--Orange-10);
+}

@@ -3,7 +3,7 @@ import classes from "./AmountBox.module.css";
 import { handleKeyDown } from "@/utils/utils";
 import { FaAngleDown } from "react-icons/fa";
 import clsx from "clsx";
-import CoinInfo from "../CoinInfo/CoinInfo";
+import CoinInfo from "../../CoinInfo/CoinInfo";
 const AmountBox = ({
   label,
   amount,

@@ -5,3 +5,7 @@
   width: 100%;
   background: var(--Primitive-900);
 }
+.type2 {
+  opacity: 0.5;
+  background: var(--gray-700, #3e4041);
+}

@@ -58,8 +58,10 @@
   background: var(--Primitive-700);
   opacity: 0.5;
 }
-.securityButton {
+.wrapper .securityButton {
   font-size: 14px;
+  padding: 0;
+  padding-bottom: 8px;
 }
 .securityIcon {
   max-width: 16px;

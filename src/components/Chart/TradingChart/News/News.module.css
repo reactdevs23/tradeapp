@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 550px;
+}
+.container .header-Q_KPo8tL {
+  justify-content: center;
+}
+.copyRight {
+  text-align: center;
+}
+.blueTextContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.container h1 {
+  display: none;
+}

@@ -7,7 +7,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
   padding: 16px;
   border-radius: 12px;
   background: var(--Primitive-800);
@@ -17,13 +17,18 @@
   flex-direction: column;
   gap: 8px;
 }
+
 .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 6px 12px;
 }
-.assets {
+.header {
+  align-items: flex-start;
+  padding-bottom: 4px;
+}
+.exchange {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -36,9 +41,6 @@
   align-items: center;
   flex-shrink: 0;
   border-radius: 50%;
-}
-.address {
-  word-break: break-all;
 }
 .duration {
   color: var(--Primitive-400);
