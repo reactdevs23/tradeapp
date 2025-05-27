@@ -1,6 +1,6 @@
 import { Navigate, Outlet } from "react-router-dom";
 
-const ProtectedRoute = ({ isAuthenticated, redirectPath = "/sign-in" }) => {
+const ProtectedRoute = ({ isAuthenticated, redirectPath = "/wallet" }) => {
   if (!isAuthenticated) {
     return <Navigate to={redirectPath} replace />;
   }

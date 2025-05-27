@@ -1,0 +1,35 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  border-top: 1px solid var(--Primitive-800);
+  border-bottom: 1px solid var(--Primitive-800);
+  background: var(--Primitive-900);
+}
+.tab {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  line-height: 142.85%;
+  font-weight: 500;
+  color: var(--Primitive-500);
+  background: transparent;
+  position: relative;
+}
+.tab:hover {
+  transform: none;
+}
+.tab.active {
+  color: var(--Blue-50);
+}
+.tab.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px 1px 0px 0px;
+  background: var(--Blue-500);
+  bottom: -1px;
+}

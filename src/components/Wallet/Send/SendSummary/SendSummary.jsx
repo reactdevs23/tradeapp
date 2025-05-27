@@ -42,7 +42,11 @@ const SendSummary = ({
                     medium
                     primitive200
                     textRight
-                    className={clsx(classes.status, classes.processing)}
+                    className={clsx(classes.status, {
+                      [classes.completed]: status.toLowerCase() === "completed",
+                      [classes.pending]: status.toLowerCase() === "processing",
+                      [classes.failed]: status.toLowerCase() === "failed",
+                    })}
                   >
                     {status || "-"}
                   </Text>

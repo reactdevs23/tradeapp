@@ -83,7 +83,6 @@ const Alltokens = () => {
                       className={
                         change >= 0 ? classes.positive : classes.negative
                       }
-                      style={{ marginLeft: 8 }}
                     >
                       {change > 0 ? "+" : ""}
                       {change.toFixed(2)}%
@@ -140,19 +139,21 @@ const Alltokens = () => {
         />
       </div>
 
-      <table className={classes.table}>
-        <tbody>
-          {table?.getRowModel()?.rows?.map((row) => (
-            <tr key={row.id} className={classes.row}>
-              {row?.getVisibleCells()?.map((cell) => (
-                <td key={cell.id} className={classes.cell}>
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className={classes.tableWrapper}>
+        <table className={classes.table}>
+          <tbody>
+            {table?.getRowModel()?.rows?.map((row) => (
+              <tr key={row.id} className={classes.row}>
+                {row?.getVisibleCells()?.map((cell) => (
+                  <td key={cell.id} className={classes.cell}>
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

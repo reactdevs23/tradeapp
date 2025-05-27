@@ -8,7 +8,7 @@ import { cartIcon } from "@/images";
 const navItems = [
   { navItem: "Trade", to: "/trade" },
   { navItem: "Chart", to: "/chart" },
-  { navItem: "History", to: "/history" },
+  { navItem: "History", to: "/trade-history" },
 ];
 const NavItems = () => {
   const navigate = useNavigate();

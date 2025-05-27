@@ -13,8 +13,8 @@ const cryptoAssets = [
     logo: usdtLogo,
     symbol: "USDT",
     name: "Tether USDT",
-    valueUSD: 678.24,
-    amount: 678.24,
+    valueUSD: -678.24,
+    amount: -678.24,
   },
   {
     logo: solanaLogo,
@@ -68,30 +68,35 @@ const cryptoAssets = [
 ];
 const networks = [
   {
+    logo: ethereumLogo,
     name: "Ethereum",
     symbol: "ERC20",
     confirmations: 1,
     minSendAmount: 0.01,
   },
   {
+    logo: solanaLogo,
     name: "Solana",
     symbol: "SOL",
     confirmations: 1,
     minSendAmount: 0.01,
   },
   {
+    logo: bnbLogo,
     name: "BNB Smart Chain",
     symbol: "BEP20",
     confirmations: 1,
     minSendAmount: 0.01,
   },
   {
+    logo: bnbLogo,
     name: "Tron",
     symbol: "TRC20",
     confirmations: 1,
     minSendAmount: 0.01,
   },
   {
+    logo: bnbLogo,
     name: "Polygon",
     symbol: "MATIC",
     confirmations: 1,
@@ -125,8 +130,8 @@ const exchangeList = [
     logo: raydiumLogo,
     type: "DEX",
     name: "Raydium",
-    valueUSD: 678.24,
-    amount: 678.24,
+    valueUSD: -678.24,
+    amount: -678.24,
   },
 ];
 const tokenList = [
@@ -136,6 +141,7 @@ const tokenList = [
     name: "Tether USDT",
     amount: 678.24,
     address: "0x10d5ddd60a73",
+    source: "raydium",
   },
   {
     logo: solanaLogo,
@@ -143,6 +149,7 @@ const tokenList = [
     name: "Solana",
     amount: 8.24,
     address: "0x10d5ddd60a73",
+    source: "pumpfun",
   },
   {
     logo: bitCoinLogo,
@@ -150,6 +157,7 @@ const tokenList = [
     name: "Bitcoin",
     amount: 1.32,
     address: "0x10d5ddd60a73",
+    source: "raydium",
   },
   {
     logo: ethereumLogo,
@@ -157,6 +165,7 @@ const tokenList = [
     name: "Ethereum",
     amount: 3.32,
     address: "0x10d5ddd60a73",
+    source: "highest",
   },
   {
     logo: ltcLogo,
@@ -164,6 +173,7 @@ const tokenList = [
     name: "Litecoin",
     amount: 5.32,
     address: "0x10d5ddd60a73",
+    source: "highest",
   },
   {
     logo: bnbLogo,
@@ -171,6 +181,7 @@ const tokenList = [
     name: "Binance Coin",
     amount: 4.32,
     address: "0x10d5ddd60a73",
+    source: "raydium",
   },
   {
     logo: ltcLogo,
@@ -178,6 +189,7 @@ const tokenList = [
     name: "Litecoin",
     amount: 5.32,
     address: "0x10d5ddd60a73",
+    source: "highest",
   },
   {
     logo: bnbLogo,
@@ -185,6 +197,7 @@ const tokenList = [
     name: "Binance Coin",
     amount: 4.32,
     address: "0x10d5ddd60a73",
+    source: "pumpfun",
   },
 ];
 const transactionTypes = [
@@ -192,6 +205,135 @@ const transactionTypes = [
   { title: "Normal", duration: "1-3 min" },
   { title: "Fast", duration: "10-30 sec" },
 ];
+const transactionsData = [
+  {
+    type: "Buy",
+    pair: {
+      from: { symbol: "USDT", logo: usdtLogo },
+      to: { symbol: "ETH", logo: ethereumLogo },
+    },
+    amount: {
+      from: { value: 678.24, symbol: "USDT" },
+      to: { value: -0.25, symbol: "ETH" },
+    },
+    time: "Almost 2 years ago",
+    status: "Completed",
+    network: { name: "Ethereum", logo: ethereumLogo },
+  },
+  {
+    type: "Sell",
+    pair: {
+      from: { symbol: "ETH", logo: ethereumLogo },
+      to: { symbol: "USDT", logo: usdtLogo },
+    },
+    amount: {
+      from: { value: 0.25, symbol: "ETH" },
+      to: { value: -678.24, symbol: "USDT" },
+    },
+    time: "Almost 2 years ago",
+    status: "Completed",
+    network: { name: "Solana", logo: solanaLogo },
+  },
+  {
+    type: "Buy",
+    pair: {
+      from: { symbol: "LTC", logo: ltcLogo },
+      to: { symbol: "BTC", logo: bitCoinLogo },
+    },
+    amount: {
+      from: { value: 0.25, symbol: "LTC" },
+      to: { value: -678.24, symbol: "BTC" },
+    },
+    time: "Almost 2 years ago",
+    status: "Pending",
+    network: { name: "Ethereum", logo: ethereumLogo },
+  },
+  {
+    type: "Buy",
+    pair: {
+      from: { symbol: "USDT", logo: usdtLogo },
+      to: { symbol: "SOL", logo: solanaLogo },
+    },
+    amount: {
+      from: { value: 0.25, symbol: "USDT" },
+      to: { value: -678.24, symbol: "SOL" },
+    },
+    time: "Almost 2 years ago",
+    status: "Completed",
+    network: { name: "Solana", logo: solanaLogo },
+  },
+  {
+    type: "Sell",
+    pair: {
+      from: { symbol: "ETH", logo: ethereumLogo },
+      to: { symbol: "LTC", logo: ltcLogo },
+    },
+    amount: {
+      from: { value: 0.25, symbol: "ETH" },
+      to: { value: -678.24, symbol: "LTC" },
+    },
+    time: "Almost 2 years ago",
+    status: "Failed",
+    network: { name: "Ethereum", logo: ethereumLogo },
+  },
+  {
+    type: "Buy",
+    pair: {
+      from: { symbol: "USDT", logo: usdtLogo },
+      to: { symbol: "ETH", logo: ethereumLogo },
+    },
+    amount: {
+      from: { value: -678.24, symbol: "USDT" },
+      to: { value: 0.25, symbol: "ETH" },
+    },
+    time: "Almost 2 years ago",
+    status: "Completed",
+    network: { name: "Ethereum", logo: ethereumLogo },
+  },
+  {
+    type: "Sell",
+    pair: {
+      from: { symbol: "ETH", logo: ethereumLogo },
+      to: { symbol: "USDT", logo: usdtLogo },
+    },
+    amount: {
+      from: { value: 0.25, symbol: "ETH" },
+      to: { value: -678.24, symbol: "USDT" },
+    },
+    time: "Almost 2 years ago",
+    status: "Completed",
+    network: { name: "Solana", logo: solanaLogo },
+  },
+  {
+    type: "Buy",
+    pair: {
+      from: { symbol: "LTC", logo: ltcLogo },
+      to: { symbol: "BTC", logo: bitCoinLogo },
+    },
+    amount: {
+      from: { value: 0.25, symbol: "LTC" },
+      to: { value: -678.24, symbol: "BTC" },
+    },
+    time: "Almost 2 years ago",
+    status: "Pending",
+    network: { name: "Solana", logo: solanaLogo },
+  },
+  {
+    type: "Buy",
+    pair: {
+      from: { symbol: "USDT", logo: usdtLogo },
+      to: { symbol: "SOL", logo: solanaLogo },
+    },
+    amount: {
+      from: { value: 0.25, symbol: "USDT" },
+      to: { value: -678.24, symbol: "SOL" },
+    },
+    time: "Almost 2 years ago",
+    status: "Completed",
+    network: { name: "Solana", logo: solanaLogo },
+  },
+];
+
 export {
   networks,
   wallets,
@@ -199,4 +341,5 @@ export {
   transactionTypes,
   exchangeList,
   tokenList,
+  transactionsData,
 };

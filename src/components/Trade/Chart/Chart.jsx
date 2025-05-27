@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import classes from "./TradingChart.module.css";
+import classes from "./Chart.module.css";
 // Custom data provider
 const createDataFeed = (symbol) => {
   return {
@@ -65,7 +65,7 @@ const createDataFeed = (symbol) => {
   };
 };
 
-const TradingViewChart = () => {
+const Chart = () => {
   const chartContainerRef = useRef(null);
 
   useEffect(() => {
@@ -84,11 +84,10 @@ const TradingViewChart = () => {
           style: "1", // Candlestick chart
           toolbar_bg: "#f1f3f6",
           hide_side_toolbar: true,
-
           allow_symbol_change: true,
           save_image: false,
           studies: [],
-          datafeed: createDataFeed("BTCUSDT"), // Custom data feed
+          datafeed: createDataFeed("BTCUSDT"),
         });
       }
     };
@@ -101,9 +100,9 @@ const TradingViewChart = () => {
       className={classes.myChart}
       id="tradingview_chart"
       ref={chartContainerRef}
-      style={{ height: "500px", width: "100%" }}
+      style={{ height: "450px", width: "100%" }}
     />
   );
 };
 
-export default TradingViewChart;
+export default Chart;

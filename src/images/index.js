@@ -33,6 +33,8 @@ import addToCartIcon from "./trade/addToCartIcon.svg";
 import autoSellIcon from "./trade/autSellIcon.png";
 import scheduleTradeIcon from "./trade/scheduleTradeIcon.png";
 import securityIcon from "./trade/securityIcon.svg";
+import documentIcon from "./trade/documentIcon.svg";
+import clockIcon from "./trade/clockIcon.svg";
 
 export {
   // wallet
@@ -68,6 +70,8 @@ export {
   autoSellIcon,
   scheduleTradeIcon,
   securityIcon,
+  documentIcon,
+  clockIcon,
   // exchane
   raydiumLogo,
 };

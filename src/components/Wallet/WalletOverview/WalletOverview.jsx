@@ -16,7 +16,7 @@ const WalletOverview = () => {
   ];
 
   return (
-    <div className={clsx(classes.sliderContainer)}>
+    <div className={clsx(classes.sliderContainer, "space")}>
       <Swiper
         slidesPerView={1}
         loop={true}

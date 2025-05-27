@@ -14,14 +14,24 @@ const TradeSubmitted = () => {
     payingAmount,
     receivingAmount,
   } = useTrade();
-  const change = -6.34;
-  const transactionType = { title: "Fast", duration: "1-3 min" };
-  const fee = "0.000099458  ETH";
-  const remainingConfirmation = 15;
-  const status = "Preprocessing";
-  const trade = "1 ETH  ≈  14.42 SOL";
-  const rate = "1 ETH  ≈  14.42 SOL";
-  const selectedWallet = { name: "Trading Wallet" };
+  const {
+    transactionType,
+    fee,
+    remainingConfirmation,
+    status,
+    trade,
+    rate,
+    selectedWallet,
+  } = {
+    transactionType: { title: "Fast", duration: "1-3 min" },
+    fee: "0.000099458  ETH",
+    remainingConfirmation: 15,
+    status: "Preprocessing",
+    trade: "1 ETH  ≈  14.42 SOL",
+    rate: "1 ETH  ≈  14.42 SOL",
+    selectedWallet: { name: "Trading Wallet" },
+  };
+
   return (
     <div className={clsx(classes.wrapper)}>
       <Successfull
@@ -80,9 +90,16 @@ const TradeSubmitted = () => {
             <Text lsm primitive400>
               Network
             </Text>
-            <Text lsm medium primitive200 textRight>
-              {selectedNetwork?.name}
-            </Text>
+            <div className={classes.networkContainer}>
+              <Text sm medium primitive200 textRight>
+                {selectedNetwork?.name}
+              </Text>
+              <img
+                src={selectedNetwork?.name}
+                alt="#"
+                className={classes.logo}
+              />
+            </div>
           </div>
           <div className={classes.item}>
             <Text lsm primitive400>

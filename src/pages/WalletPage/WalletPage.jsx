@@ -10,17 +10,17 @@ import Navbar from "@/components/Navbar/Navbar";
 const WalletPage = () => {
   return (
     <div className={clsx("container", classes.container)}>
-      <div className={clsx("space", classes.headerAndWalletOverview)}>
-        <div className={clsx(classes.header)}>
-          <Heading lg primitive0>
-            Wallet
-          </Heading>
-          <IconButton onClick={() => {}}>
-            <IoNotifications className={classes.icon} />
-          </IconButton>
-        </div>
-        <WalletOverview />
+      <div className={clsx(classes.header, "space")}>
+        <Heading lg primitive0>
+          Wallet
+        </Heading>
+        <IconButton onClick={() => {}}>
+          <IoNotifications className={classes.icon} />
+        </IconButton>
       </div>
+
+      <WalletOverview />
+
       <NavItems />
       <Alltokens />
 

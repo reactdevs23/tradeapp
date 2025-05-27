@@ -2,8 +2,7 @@ import classes from "./App.module.css";
 
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "@/Layout/MainLayout";
-import Home from "@/pages/Home/Home";
-import WalletLayout from "./Layout/TradeLayout/TradeLayout";
+
 import WalletPage from "./pages/WalletPage/WalletPage";
 import { Heading } from "./components/common";
 import NotFound from "./components/common/NotFound/NotFound";
@@ -11,10 +10,14 @@ import SendPage from "./pages/WalletPage/SendPage/SendPage";
 import ReceivePage from "./pages/WalletPage/ReceivePage/ReceivePage";
 import TradePage from "./pages/TradePage/TradePage";
 import TradeLayout from "./Layout/TradeLayout/TradeLayout";
-import TradeCarts from "./pages/TradePage/TradeCarts/TradeCarts";
-import TradingChart from "./pages/TradePage/TradingChart/TradingChart";
+
+import ProtectedRoute from "./components/common/ProtectedRoute/ProtectedRoute";
+import TradeHistoryDetails from "./pages/TradeHistoryDetails/TradeHistoryDetails";
+import TradingChart from "./pages/TradingChart/TradingChart";
+import TradeCarts from "./pages/TradeCarts/TradeCarts";
 
 function App() {
+  const isAuthenticated = true;
   return (
     <>
       <Heading xl5 className={classes.heading} primitive0>
@@ -22,22 +25,30 @@ function App() {
       </Heading>
       <main className={classes.mainWrapper}>
         <Routes>
-          <Route path="/" element={<MainLayout />}>
-            {/* Wallet start */}
-            <Route path="/" element={<WalletPage />} />
-            <Route path="/send" element={<SendPage />} />
-            <Route path="/receive" element={<ReceivePage />} />
-            <Route path="/" element={<WalletLayout />}></Route>
-            {/* wallet end */}
+          <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} />}>
+            <Route path="/" element={<MainLayout />}>
+              {/* Wallet start */}
+              <Route path="/wallet" element={<WalletPage />} />
+              <Route path="/send" element={<SendPage />} />
+              <Route path="/receive" element={<ReceivePage />} />
 
-            {/* Trade star */}
-            <Route path="/" element={<TradeLayout />}>
-              <Route path="trade" element={<TradingChart />} />
+              {/* wallet end */}
+
+              {/* Trade start */}
+              <Route path="/" element={<TradeLayout />}>
+                <Route path="trade" element={<TradePage />} />
+                <Route path="chart" element={<TradingChart />} />
+                <Route path="/trade-history" element={<TradeHis />} />
+              </Route>
+              <Route
+                path="/trade-history-details"
+                element={<TradeHistoryDetails />}
+              />
+              <Route path="/trade-cart" element={<TradeCarts />} />
+              {/* Trade end */}
             </Route>
-            <Route path="/trade-cart" element={<TradeCarts />} />
-            {/* Trade end */}
+            <Route path="*" element={<NotFound />} />
           </Route>
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
     </>

@@ -39,9 +39,12 @@ const Cart = () => {
           <Text sm primitive500>
             Network
           </Text>
-          <Text sm medium primitive200 textRight>
-            {selectedNetwork?.name}
-          </Text>
+          <div className={classes.networkContainer}>
+            <Text sm medium primitive200 textRight>
+              {selectedNetwork?.name}
+            </Text>
+            <img src={selectedNetwork?.name} alt="#" className={classes.logo} />
+          </div>
         </div>
         <div className={classes.item}>
           <Text sm primitive500>

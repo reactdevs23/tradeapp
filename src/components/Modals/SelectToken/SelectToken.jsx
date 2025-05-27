@@ -6,7 +6,10 @@ import { Modal, Text, Input, Heading } from "@/components/common";
 import clsx from "clsx";
 import { IoClose } from "react-icons/io5";
 import { maskToken } from "@/utils/utils";
+import PopularToken from "./PopularToken/PopularToken";
+import Tabs from "./Tabs/Tabs";
 
+const tabs = ["Raydium Hot", "Pumpfun Hot", "24hr Highest Traded"];
 const SelectToken = ({
   items,
   selectedToken,
@@ -15,13 +18,33 @@ const SelectToken = ({
   onClose,
 }) => {
   const [searchValue, setSearchValue] = useState("");
-  const filteredItems = items.filter((item) =>
-    item.name.toLowerCase().includes(searchValue.toLowerCase())
-  );
+  const [activeTab, setActiveTab] = useState("Raydium Hot");
+  const filterByTab = (item) => {
+    switch (activeTab) {
+      case "Raydium Hot":
+        return item.source === "raydium";
+      case "Pumpfun Hot":
+        return item.source === "pumpfun";
+      case "24hr Highest Traded":
+        return item.source === "highest";
+      default:
+        return true;
+    }
+  };
 
+  const filteredItems = items.filter(
+    (item) =>
+      item.name.toLowerCase().includes(searchValue.toLowerCase()) &&
+      filterByTab(item)
+  );
   return (
-    <Modal noHeader isActive={isActive} onClose={onClose}>
-      <div className={classes.header}>
+    <Modal
+      noHeader
+      isActive={isActive}
+      onClose={onClose}
+      className={clsx(classes.modal, classes.myModal)}
+    >
+      <div className={clsx(classes.header, "space")}>
         <Heading primitive200 medium lg>
           Select Token
         </Heading>
@@ -39,8 +62,14 @@ const SelectToken = ({
           className={classes.input}
         />
       </div>
-
-      <div className={clsx(classes.items)}>
+      <PopularToken
+        items={items}
+        selectedToken={selectedToken}
+        setSelectedToken={setSelectedToken}
+        onClose={onClose}
+      />
+      <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
+      <div className={clsx(classes.items, "space")}>
         {filteredItems.map((item, i) => (
           <div
             onClick={() => {

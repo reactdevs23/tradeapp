@@ -22,11 +22,12 @@
   align-items: flex-start;
   padding-bottom: 4px;
 }
-.exchange {
+.exchange,
+.networkContainer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 8px;
+  gap: 6px;
 }
 .logo {
   max-width: 20px;
