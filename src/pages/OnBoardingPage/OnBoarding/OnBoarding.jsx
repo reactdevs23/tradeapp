@@ -4,18 +4,24 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import classes from "./OnBoarding.module.css";
-import { onboarding1, onboarding2, onboarding3, onboarding4 } from "@/images";
+
 import clsx from "clsx";
+import {
+  onboardingFirst,
+  onboardingFour,
+  onboardingSecond,
+  onboardingThird,
+} from "@/images";
 const onBoardings = [
-  { img: onboarding1, overlayPosition: "bottom" },
+  { img: onboardingFirst, overlayPosition: "bottom" },
   {
-    img: onboarding2,
+    img: onboardingSecond,
 
     overlayPosition: "bottom",
   },
-  { img: onboarding3, overlayPosition: "bottom" },
+  { img: onboardingThird, overlayPosition: "bottom" },
   {
-    img: onboarding4,
+    img: onboardingFour,
 
     overlayPosition: "top",
   },

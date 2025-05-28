@@ -58,11 +58,11 @@ import zarpLogo from "./referral/zarpLogo.svg";
 import referIcon from "./referral/referIcon.svg";
 
 // onboarding
-import onboarding1 from "./onBoarding/onBoarding1.png";
-import onboarding2 from "./onBoarding/onBoarding2.png";
-import onboarding3 from "./onBoarding/onBoarding3.png";
-import onboarding4 from "./onBoarding/onBoarding4.png";
-// onboarding end
+import onboardingFirst from "./onBoarding/onBoardingFirst.png";
+import onboardingSecond from "./onBoarding/onBoardingSecond.png";
+import onboardingThird from "./onBoarding/onBoardingThird.png";
+import onboardingFour from "./onBoarding/onBoardingFour.png";
+
 export {
   logo,
   // wallet
@@ -124,8 +124,8 @@ export {
   referIcon,
 
   //obboarding
-  onboarding1,
-  onboarding2,
-  onboarding3,
-  onboarding4,
+  onboardingFirst,
+  onboardingSecond,
+  onboardingThird,
+  onboardingFour,
 };
