@@ -4,7 +4,7 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import classes from "./Alltokens.module.css";
+import classes from "./AllTokens.module.css";
 import { bitCoinLogo, ethereumLogo, solanaLogo, usdtLogo } from "@/images";
 import { Heading, Input, Text } from "@/components/common";
 
