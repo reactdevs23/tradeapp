@@ -58,10 +58,10 @@ import zarpLogo from "./referral/zarpLogo.svg";
 import referIcon from "./referral/referIcon.svg";
 
 // onboarding
-import onboarding1 from "./splashScreen/onBoarding1.png";
-import onboarding2 from "./splashScreen/onBoarding2.png";
-import onboarding3 from "./splashScreen/onBoarding3.png";
-import onboarding4 from "./splashScreen/onBoarding4.png";
+import onboarding1 from "./onBoarding/onBoarding1.png";
+import onboarding2 from "./onBoarding/onBoarding2.png";
+import onboarding3 from "./onBoarding/onBoarding3.png";
+import onboarding4 from "./onBoarding/onBoarding4.png";
 
 export {
   logo,
