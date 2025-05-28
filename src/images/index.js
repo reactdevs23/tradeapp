@@ -62,7 +62,7 @@ import onboarding1 from "./onBoarding/onBoarding1.png";
 import onboarding2 from "./onBoarding/onBoarding2.png";
 import onboarding3 from "./onBoarding/onBoarding3.png";
 import onboarding4 from "./onBoarding/onBoarding4.png";
-
+// onboarding end
 export {
   logo,
   // wallet
