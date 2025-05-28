@@ -18,9 +18,7 @@ export const copyToClipboard = (value) => {
   navigator.clipboard.writeText(value);
 };
 // utils.js
-export function convertMBtoGB(mb) {
-  return `${mb / 1024} GB`;
-}
+
 export const maskToken = (token) => {
   if (!token) return "";
 
@@ -36,21 +34,13 @@ export const maskToken = (token) => {
   }
 };
 
-export const maskEmail = (email) => {
-  if (!email) return "you****@email.com";
-  const [username, domain] = email.split("@");
-  return `${username.substring(0, 2)}****@${domain}`;
-};
 export const scrollToBottom = () => {
   window.scrollTo({
     top: document.body.scrollHeight,
     behavior: "smooth",
   });
 };
-export const maskDigits = (num) => {
-  const str = String(num);
-  return "****" + str.slice(-4);
-};
+
 export const getLocalStorage = (key, defaultValue) => {
   try {
     const stored = localStorage.getItem(key);
