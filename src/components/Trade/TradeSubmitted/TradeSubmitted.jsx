@@ -2,7 +2,7 @@ import { Button, Heading, Line, Text } from "@/components/common";
 import classes from "./TradeSubmitted.module.css";
 import clsx from "clsx";
 import Successfull from "@/components/common/Successfull/Successfull";
-import { useTrade } from "@/Context/TradeContext";
+import useTrade from "@/Context/TradeContext/useTrade";
 
 const TradeSubmitted = () => {
   const {
@@ -33,7 +33,7 @@ const TradeSubmitted = () => {
   };
 
   return (
-    <div className={clsx(classes.wrapper)}>
+    <div className={clsx(classes.wrapper, "space")}>
       <Successfull
         heading="Trade Submitted!"
         info="Your trade is being processed. You’ll receive a confirmation."

@@ -18,6 +18,7 @@ const SelectNetwork = ({
       isActive={isActive}
       onClose={onClose}
       className={clsx(classes.modal, classes.myModal)}
+      heading="Select Network"
     >
       <div className={clsx(classes.items)}>
         {items.map((item, i) => (

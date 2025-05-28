@@ -1,0 +1,31 @@
+.wrapper {
+  padding-top: 8px;
+  width: 100%;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 14px;
+  border-radius: 10px;
+  background: var(--Primitive-900, #1c1e1f);
+}
+.img {
+  max-width: 40px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.amount {
+  color: var(--Primitive-500);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}

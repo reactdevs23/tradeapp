@@ -5,26 +5,14 @@ import { Heading, IconButton } from "@/components/common";
 import { IoNotifications } from "react-icons/io5";
 import NavItems from "@/components/Wallet/NavItems/Navitems";
 import Alltokens from "@/components/Wallet/AllTokens/AllTokens";
-import Navbar from "@/components/Navbar/Navbar";
 
 const WalletPage = () => {
   return (
-    <div className={clsx("container", classes.container)}>
-      <div className={clsx(classes.header, "space")}>
-        <Heading lg primitive0>
-          Wallet
-        </Heading>
-        <IconButton onClick={() => {}}>
-          <IoNotifications className={classes.icon} />
-        </IconButton>
-      </div>
-
+    <div className={clsx("", classes.container)}>
       <WalletOverview />
 
       <NavItems />
       <Alltokens />
-
-      <Navbar />
     </div>
   );
 };

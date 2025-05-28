@@ -26,62 +26,62 @@ const TradeCarts = () => {
   return (
     <>
       <Header className={clsx(classes.header, "space")}>Cart (0)</Header>
-      <div className={clsx(classes.wrapper, "space")}>
-        {step === STEPS.CARTS && (
-          <>
-            <div className={classes.carts}>
-              <Cart /> <Cart />
-            </div>
 
-            <WarningContainer>
-              <span className={classes.highlight}>Disclaimer:</span> The info
-              above represents the state when order was added to the cart. you
-              may get slightly different outputs during execution depending on
-              slippage
-            </WarningContainer>
+      {step === STEPS.CARTS && (
+        <div className={clsx(classes.wrapper, "space")}>
+          <div className={classes.carts}>
+            <Cart /> <Cart />
+          </div>
 
-            <div className={classes.footer}>
-              <div className={classes.spaceBetween}>
-                <Text lsm primitive400>
-                  Bundle Transactions
-                </Text>
-                <Switch
-                  isChecked={buildTransaction}
-                  setIsChecked={setBuildTransaction}
-                />
-              </div>{" "}
-              <div className={classes.spaceBetween}>
-                <Text lsm primitive400>
-                  Priority Fee
-                </Text>
-                <Tabs
-                  tabs={priorities}
-                  activeTab={activePriority}
-                  setActiveTab={setActivePriority}
-                />
-              </div>
-              <div className={classes.buttonContainer}>
-                <Button
-                  blue10
-                  wFull
-                  className={classes.button}
-                  onClick={handleExecuteSelected}
-                >
-                  Execute Selected Trade
-                </Button>
-                <Button
-                  wFull
-                  className={classes.button}
-                  onClick={handleExecuteAll}
-                >
-                  Execute All
-                </Button>
-              </div>
+          <WarningContainer>
+            <span className={classes.highlight}>Disclaimer:</span> The info
+            above represents the state when order was added to the cart. you may
+            get slightly different outputs during execution depending on
+            slippage
+          </WarningContainer>
+
+          <div className={classes.footer}>
+            <div className={classes.spaceBetween}>
+              <Text lsm primitive400>
+                Bundle Transactions
+              </Text>
+              <Switch
+                isChecked={buildTransaction}
+                setIsChecked={setBuildTransaction}
+              />
+            </div>{" "}
+            <div className={classes.spaceBetween}>
+              <Text lsm primitive400>
+                Priority Fee
+              </Text>
+              <Tabs
+                tabs={priorities}
+                activeTab={activePriority}
+                setActiveTab={setActivePriority}
+              />
             </div>
-            <Overlay type2 />
-          </>
-        )}
-      </div>{" "}
+            <div className={classes.buttonContainer}>
+              <Button
+                blue10
+                wFull
+                className={classes.button}
+                onClick={handleExecuteSelected}
+              >
+                Execute Selected Trade
+              </Button>
+              <Button
+                wFull
+                className={classes.button}
+                onClick={handleExecuteAll}
+              >
+                Execute All
+              </Button>
+            </div>
+          </div>
+          <Overlay type2 />
+        </div>
+      )}
+
       {step === STEPS.TRADE_SUBMITTED && <TradeSubmitted />}
     </>
   );

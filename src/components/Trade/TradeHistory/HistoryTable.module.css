@@ -44,6 +44,7 @@
 .cell:last-child,
 .headerCell:last-child {
   padding-right: 0;
+  padding-left: 0;
 }
 
 .type.buy {
@@ -101,6 +102,7 @@
 }
 .row {
   border-top: 1px solid var(--Primitive-800);
+  cursor: pointer;
 }
 .row:last-child {
   border: none;

@@ -333,6 +333,123 @@ const transactionsData = [
     network: { name: "Solana", logo: solanaLogo },
   },
 ];
+const partners = [
+  {
+    logo: usdtLogo,
+    symbol: "USDT",
+    name: "Tether USDT",
+  },
+  {
+    logo: solanaLogo,
+    symbol: "SOL",
+    name: "Solana",
+  },
+  {
+    logo: bitCoinLogo,
+    symbol: "BTC",
+    name: "Bitcoin",
+  },
+  {
+    logo: ethereumLogo,
+    symbol: "ETH",
+    name: "Ethereum",
+  },
+  {
+    logo: ltcLogo,
+    symbol: "LTC",
+    name: "Litecoin",
+  },
+  {
+    logo: bnbLogo,
+    symbol: "BNB",
+    name: "Binance Coin",
+  },
+  {
+    logo: ltcLogo,
+    symbol: "LTC",
+    name: "Litecoin",
+  },
+  {
+    logo: bnbLogo,
+    symbol: "BNB",
+    name: "Binance Coin",
+  },
+];
+
+const invitedList = [
+  {
+    friend: "Alex B.",
+    status: "Completed",
+    reward: "12 zarp",
+    joined: "May 15, 2025",
+  },
+  {
+    friend: "Sara M.",
+    status: "Pending Action",
+    reward: "0 zarp",
+    joined: "May 20, 2025",
+  },
+  {
+    friend: "John T.",
+    status: "Completed",
+    reward: "12 zarp",
+    joined: "May 10, 2025",
+  },
+  {
+    friend: "Emma R.",
+    status: "First Trade Pending",
+    reward: "0 zarp",
+    joined: "May 10, 2025",
+  },
+  {
+    friend: "Leo D.",
+    status: "Incomplete",
+    reward: "0 zarp",
+    joined: "May 10, 2025",
+  },
+  {
+    friend: "Alex B.",
+    status: "Completed",
+    reward: "12 zarp",
+    joined: "May 15, 2025",
+  },
+  {
+    friend: "Sara M.",
+    status: "Pending Action",
+    reward: "0 zarp",
+    joined: "May 20, 2025",
+  },
+  {
+    friend: "John T.",
+    status: "Completed",
+    reward: "12 zarp",
+    joined: "May 10, 2025",
+  },
+  {
+    friend: "Emma R.",
+    status: "First Trade Pending",
+    reward: "0 zarp",
+    joined: "May 10, 2025",
+  },
+  {
+    friend: "Leo D.",
+    status: "Incomplete",
+    reward: "0 zarp",
+    joined: "May 10, 2025",
+  },
+  {
+    friend: "Alex B.",
+    status: "Completed",
+    reward: "12 zarp",
+    joined: "May 15, 2025",
+  },
+  {
+    friend: "Sara M.",
+    status: "Pending Action",
+    reward: "0 zarp",
+    joined: "May 20, 2025",
+  },
+];
 
 export {
   networks,
@@ -342,4 +459,6 @@ export {
   exchangeList,
   tokenList,
   transactionsData,
+  partners,
+  invitedList,
 };

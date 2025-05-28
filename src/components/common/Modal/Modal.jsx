@@ -39,7 +39,7 @@ const Modal = ({
         {!noHeader && (
           <div className={classes.header}>
             <Heading primitive200 medium lg>
-              Select Network
+              {heading}
             </Heading>
 
             <button onClick={onClose}>

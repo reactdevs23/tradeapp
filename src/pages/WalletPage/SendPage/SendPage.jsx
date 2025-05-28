@@ -89,8 +89,8 @@ const SendPage = () => {
         />
       )}
 
-      <div className={classes.buttonContainer}>
-        {step !== STEPS.REQUEST_SUBMITTED && (
+      {step !== STEPS.REQUEST_SUBMITTED && (
+        <div className={classes.buttonContainer}>
           <>
             <Button
               onClick={handleTransaction}
@@ -105,8 +105,8 @@ const SendPage = () => {
                 : ""}
             </Button>
           </>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 8px;
+}
+.container {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 20px 20px 0px 0px;
+  background: var(--Primitive-950);
+  padding-bottom: 100px;
+}

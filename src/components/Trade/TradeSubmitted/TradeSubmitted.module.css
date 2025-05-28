@@ -75,7 +75,8 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 0px;
-  width: calc(100% - 32px);
+  width: calc(100%);
+  padding: 0 16px;
 
   padding-top: 8px;
   padding-bottom: calc(16px + env(safe-area-inset-bottom));

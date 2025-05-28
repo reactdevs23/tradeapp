@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 8px;
+}
+.overlay {
+  bottom: 0 !important;
+  height: 50px !important;
+}

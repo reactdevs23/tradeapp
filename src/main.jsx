@@ -5,7 +5,7 @@ import App from "./App";
 
 import { BrowserRouter } from "react-router-dom";
 import ScrollToTop from "@/utils/utils.js";
-import TradeProvider from "./Context/TradeContext";
+import TradeProvider from "./Context/TradeContext/TradeProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

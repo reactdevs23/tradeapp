@@ -1,0 +1,28 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.tab {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 142.85%;
+  font-weight: 500;
+  color: var(--Primitive-400);
+  background: var(--Primitive-800);
+
+  flex: 1;
+}
+.tab:hover {
+  transform: none;
+}
+.tab.active {
+  background: var(--Blue-500);
+  color: var(--Primitive-0);
+}
+.tab.loss {
+  color: var(--Orange);
+  background: var(--Orange-10);
+}

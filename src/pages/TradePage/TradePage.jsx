@@ -10,7 +10,7 @@ import SelectToken from "@/components/Modals/SelectToken/SelectToken";
 import { Button } from "@/components/common";
 import { addToCartIcon } from "@/images";
 import AdvanceSettings from "@/components/Trade/AdvanceSettings/AdvanceSettings";
-import { useTrade } from "@/Context/TradeContext";
+import useTrade from "@/Context/TradeContext/useTrade";
 const payingPercentages = ["25%", "50%", "75%", "100%"];
 
 const TradePage = () => {

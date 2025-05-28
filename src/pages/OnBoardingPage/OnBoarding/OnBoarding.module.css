@@ -1,0 +1,70 @@
+.swiperWrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.swiper {
+  border-radius: 16px;
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+}
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Slide style */
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progressWrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.progressBar {
+  flex: 1;
+  height: 4px;
+  background-color: var(--Primitive-700);
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.fill {
+  height: 100%;
+  width: 100%;
+  background-color: var(--Blue-500); /* or your desired active color */
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.activeFill {
+  transition: transform 0.1s linear;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 240px;
+
+  z-index: 10;
+  background: #fff;
+}
+.overlay.ovelayTop {
+  background: linear-gradient(180deg, #1c1e1f 0%, rgba(28, 30, 31, 0) 100%);
+
+  top: 0;
+}
+.overlay.ovelayBottom {
+  background: linear-gradient(180deg, rgba(28, 30, 31, 0) 0%, #1c1e1f 100%);
+
+  top: auto;
+  bottom: 0;
+}

@@ -1,0 +1,13 @@
+.wrapper {
+  padding-bottom: 100px;
+}
+.container {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.overlay {
+  bottom: -20px !important;
+  height: 50px;
+}

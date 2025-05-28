@@ -7,7 +7,7 @@ import {
 import SingleRow from "./SingleRow";
 
 import classes from "./HistoryTable.module.css";
-import { transactionsData } from "@/data/data";
+
 import clsx from "clsx";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Heading, IconButton, Text } from "@/components/common";

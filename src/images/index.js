@@ -1,3 +1,5 @@
+import logo from "./zarpLogo.svg";
+
 // wallet
 import binanceOverviewImg from "./wallet/balanceOverview.png";
 import receiveIcon from "./wallet/receiveIcon.svg";
@@ -36,7 +38,33 @@ import securityIcon from "./trade/securityIcon.svg";
 import documentIcon from "./trade/documentIcon.svg";
 import clockIcon from "./trade/clockIcon.svg";
 
+// socialIcon
+import discordLogo from "./socialIcon/discord.svg";
+import fbLogo from "./socialIcon/fb.svg";
+import telegramLogo from "./socialIcon/telegram.svg";
+import twitterLogo from "./socialIcon/twitter.svg";
+import youtubeLogo from "./socialIcon/youtubeIcon.svg";
+// dashboard
+import friendsImg from "./dashboard/friends.png";
+import rewardImg from "./dashboard/rewardIcon.png";
+import tradeImg from "./dashboard/tradeIcon.png";
+import transactionImg from "./dashboard/tradeIcon.png";
+import usersImg from "./dashboard/users.png";
+import balanceCardImg from "./dashboard/balanceCard.png";
+import zarpSchedulerImg from "./dashboard/zarpScheduler.png";
+
+// referral
+import zarpLogo from "./referral/zarpLogo.svg";
+import referIcon from "./referral/referIcon.svg";
+
+// onboarding
+import onboarding1 from "./splashScreen/onBoarding1.png";
+import onboarding2 from "./splashScreen/onBoarding2.png";
+import onboarding3 from "./splashScreen/onBoarding3.png";
+import onboarding4 from "./splashScreen/onBoarding4.png";
+
 export {
+  logo,
   // wallet
   binanceOverviewImg,
   receiveIcon,
@@ -74,4 +102,30 @@ export {
   clockIcon,
   // exchane
   raydiumLogo,
+
+  // socialIcon
+  discordLogo,
+  fbLogo,
+  twitterLogo,
+  telegramLogo,
+  youtubeLogo,
+
+  // dashboard
+  friendsImg,
+  rewardImg,
+  tradeImg,
+  transactionImg,
+  usersImg,
+  balanceCardImg,
+  zarpSchedulerImg,
+
+  // referral
+  zarpLogo,
+  referIcon,
+
+  // splash scree
+  onboarding1,
+  onboarding2,
+  onboarding3,
+  onboarding4,
 };

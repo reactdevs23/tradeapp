@@ -12,7 +12,7 @@ import { Text } from "@/components/common";
 import clsx from "clsx";
 
 const navItems = [
-  { Icon: HomeIcon, item: "Home", to: "/" },
+  { Icon: HomeIcon, item: "Home", to: "/dashboard" },
   { Icon: MarketsIcon, item: "Markets", to: "/markets" },
   { Icon: TradeIcon, item: "Trade", to: "/trade" },
   { Icon: WalletIcon, item: "Wallet", to: "/wallet" },

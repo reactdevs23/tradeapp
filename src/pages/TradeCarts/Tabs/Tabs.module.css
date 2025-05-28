@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   border-radius: 6px;
-  background: var(--Primitive-900);
+  background: var(--Primitive-950);
   padding: 2px;
 }
 .tab {

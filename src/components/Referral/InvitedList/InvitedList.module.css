@@ -1,0 +1,80 @@
+.tableContainer {
+  height: 100%; /* or a specific value like 400px */
+  overflow: hidden; /* Prevents outer scrolling */
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+  padding-top: 8px;
+}
+
+.tableWrapper {
+  flex: 1;
+  overflow-y: auto; /* allows internal vertical scroll */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.headerRow {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+.headerCell {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--Primitive-500);
+  line-height: 123.077%;
+  padding: 12px 24px;
+  padding-top: 8px;
+  text-align: left;
+}
+.cell {
+  font-size: 15px;
+  color: var(--Primitive-400);
+  font-weight: 500;
+  line-height: 133.33%;
+  white-space: nowrap;
+  padding: 12px 24px;
+}
+.cell:first-child,
+.headerCell:first-child {
+  padding-left: 0;
+}
+.cell:last-child,
+.headerCell:last-child {
+  padding-right: 0;
+  text-align: right;
+}
+
+.status {
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.pending {
+  background: var(--Orange-10);
+  color: var(--Orange);
+}
+.completed {
+  background: var(--Green-10);
+  color: var(--Green);
+}
+.incomplete {
+  background: var(--Red-10);
+  color: var(--Red);
+}
+.tradePending {
+  background: var(--Purple-10);
+  color: var(--Purple);
+}
+.row {
+  border-top: 1px solid var(--Primitive-800);
+}
+.row:last-child {
+  border: none;
+}
+
+.noData {
+  padding: 40px 0;
+}

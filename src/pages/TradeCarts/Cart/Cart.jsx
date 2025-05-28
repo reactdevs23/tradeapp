@@ -1,9 +1,9 @@
 import { CheckBox, Heading, Line, Text } from "@/components/common";
 import classes from "./Cart.module.css";
 import clsx from "clsx";
-import { useTrade } from "@/Context/TradeContext";
 import CircularProgressBar from "@/components/common/CircularProgressBar/CircularProgressbar";
 import { useState } from "react";
+import useTrade from "@/Context/TradeContext/useTrade";
 
 const Cart = () => {
   const {

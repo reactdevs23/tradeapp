@@ -1,0 +1,82 @@
+.wrapper {
+  position: relative;
+  border-radius: 12px;
+  background: var(--Primitive-800);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1;
+}
+.codeAndLink {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: 100%;
+}
+.linkContainer {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--Primitive-900);
+  width: 100%;
+}
+.link {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.referIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 80px;
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  z-index: -1;
+}
+.qrContainer {
+  width: 160px;
+  border-radius: 2px;
+  aspect-ratio: 1/1;
+  background: var(--Primitive-0);
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  flex: 1;
+}
+.showQrCodeButton {
+  color: var(--Blue-500);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+}
+.showQrCodeButton.center {
+  margin: 0 auto;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.button {
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 142.85%;
+  font-weight: 500;
+  color: var(--Primitive-300);
+  background: var(--Primitive-700);
+  flex: 1;
+  white-space: nowrap;
+}
+.shareButton {
+  background: var(--Blue-500);
+  color: var(--Primitive-50);
+}

@@ -14,7 +14,7 @@
   top: 0;
   background: var(--Primitive-900);
   padding-top: 16px;
-  border-radius: 20px 20px 0px 0px;
+  z-index: 10;
 }
 .header .inputWrapper {
   grid-column: 1/-1;

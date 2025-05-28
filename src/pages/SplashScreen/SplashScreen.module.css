@@ -1,0 +1,53 @@
+/* SplashScreen.module.css */
+.wrapper {
+  width: 100vw;
+  height: calc(var(--real-vh) * 100);
+  background: linear-gradient(270deg, #5ea5fc, #2b68ee, #3981f8);
+  background-size: 600% 600%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: gradientMove 8s ease infinite;
+  transition: opacity 0.6s ease;
+}
+
+.logo {
+  width: 120px;
+  animation: logoFadeScale 1.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* Optional: subtle floating background animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes logoFadeScale {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -25,7 +25,7 @@ const SendForm = ({
   cryptoAssets,
 }) => {
   return (
-    <>
+    <div className={classes.wrapper}>
       <WarningContainer>
         Make sure the selected network matches your recipient wallet. Sending to
         an incompatible network can result in asset loss.
@@ -91,7 +91,7 @@ const SendForm = ({
         setSelectedTransactionType={setSelectedTransactionType}
         transactionTypes={transactionTypes}
       />
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,18 @@
+.features {
+  padding: 0 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.feature {
+  display: flex;
+
+  gap: 12px;
+}
+
+.icon {
+  margin-top: 3px;
+  font-size: 18px;
+  flex-shrink: 0;
+  color: var(--Blue-500);
+}

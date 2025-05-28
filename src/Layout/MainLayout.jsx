@@ -3,9 +3,10 @@ import { Outlet } from "react-router-dom";
 import classes from "./MainLayout.module.css";
 
 import Overlay from "@/components/common/Overlay/Overlay";
-const MainLayout = () => {
+import clsx from "clsx";
+const MainLayout = ({ noPadding }) => {
   return (
-    <main className={classes.wrapper}>
+    <main className={clsx(classes.wrapper, noPadding && classes.noPadding)}>
       <Outlet />
 
       <Overlay />

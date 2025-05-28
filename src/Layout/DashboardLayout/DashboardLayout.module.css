@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--Primitive-900);
+}
+.icon {
+  color: var(--Primitive-500);
+  font-size: 20px;
+}

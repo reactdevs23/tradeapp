@@ -1,0 +1,30 @@
+.wrapper {
+  padding: 16px 16px 10px 16px;
+  border-radius: 12px;
+  background: var(--Primitive-800);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.infoAndImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 8px;
+}
+.friends {
+  max-width: 70px;
+  width: 100%;
+  transform: translateY(-16px);
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 136px;
+  width: 100%;
+}
+.wrapper .referButton {
+  font-size: 14px;
+  padding: 0;
+}
