@@ -123,7 +123,7 @@ export {
   zarpLogo,
   referIcon,
 
-  // splash scree
+  //obboarding
   onboarding1,
   onboarding2,
   onboarding3,
