@@ -48,7 +48,7 @@ import youtubeLogo from "./socialIcon/youtubeIcon.svg";
 import friendsImg from "./dashboard/friends.png";
 import rewardImg from "./dashboard/rewardIcon.png";
 import tradeImg from "./dashboard/tradeIcon.png";
-import transactionImg from "./dashboard/tradeIcon.png";
+import transactionImg from "./dashboard/transactionIcon.png";
 import usersImg from "./dashboard/users.png";
 import balanceCardImg from "./dashboard/balanceCard.png";
 import zarpSchedulerImg from "./dashboard/zarpScheduler.png";
