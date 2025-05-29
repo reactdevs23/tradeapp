@@ -1,0 +1,8 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.toggle {
+  padding-top: 8px;
+}

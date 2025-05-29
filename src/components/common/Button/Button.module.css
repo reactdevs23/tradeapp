@@ -53,7 +53,7 @@
 }
 .lg {
   font-size: 18px;
-  padding: 12px 20px;
+  padding: 10px 22px;
 }
 
 .blue10 {
@@ -63,6 +63,14 @@
 .green10 {
   background: var(--Green-10);
   color: var(--Green);
+}
+.green {
+  color: var(--Primitive-0);
+  background: #1cad7f;
+}
+.red {
+  color: var(--Primitive-0);
+  background: var(--Red);
 }
 /* .btnPrimary {
   border-bottom: 2px solid var(--Blue-600);

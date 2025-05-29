@@ -25,6 +25,7 @@
   line-height: 142.85%;
   font-weight: 500;
   color: var(--Primitive-400);
+  white-space: nowrap;
 }
 .tab:hover {
   transform: none;

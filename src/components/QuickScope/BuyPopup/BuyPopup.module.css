@@ -1,0 +1,96 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.singleToken {
+  border-radius: 8px;
+  background: var(--Primitive-900);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+.line:last-child {
+  display: none;
+}
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--Primitive-800);
+  background: var(--Primitive-900);
+  padding: 12px 16px;
+}
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: 100%;
+  width: 100%;
+}
+
+.rightSide {
+  align-items: flex-end;
+  width: 100%;
+}
+.info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.logo {
+  max-width: 24px;
+  min-width: 24px;
+  display: block;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  transform: translateY(8px);
+}
+.positive {
+  color: var(--Green);
+}
+.negative {
+  color: var(--Red);
+}
+.singleToken .buyButton {
+  padding: 4px 24px;
+  border-radius: 6px;
+  margin-top: auto;
+}
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px 6px;
+  width: 100%;
+}
+
+.permitted,
+.notPermitted {
+  font-size: 16px;
+  transform: translateY(3px);
+}
+.permitted {
+  color: var(--Green);
+}
+.notPermitted {
+  color: var(--Red);
+}
+.amountContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.balanceContainer {
+  padding: 0 16px;
+}
+.balance {
+  color: var(--Primitive-200);
+}

@@ -19,6 +19,9 @@ import NotFound from "./components/common/NotFound/NotFound";
 import { Heading } from "./components/common";
 import SplashScreen from "./pages/SplashScreen/SplashScreen";
 import OnBoardingPage from "./pages/OnBoardingPage/OnBoardingPage";
+import SnipperPage from "./pages/SnipperPage/SnipperPage";
+import QuickScope from "./pages/QuickScope/QuickScope";
+import QuickScopeSubmitted from "./pages/QuickScopeSubmitted/QuickScopeSubmitted";
 
 function App() {
   const isAuthenticated = true;
@@ -41,7 +44,13 @@ function App() {
               <Route element={<DashboardLayout heading="Dashboard" />}>
                 <Route path="/dashboard" element={<Dashboard />} />
               </Route>
-              <Route path="referral" element={<ReferralPage />} />
+              <Route path="referral" element={<ReferralPage />} />{" "}
+              {/* SnipperPage */}
+              <Route element={<DashboardLayout heading="Snipper" />}>
+                <Route path="/snipper" element={<SnipperPage />} />
+              </Route>
+              <Route path="/quick-scope" element={<QuickScope />} />
+              <Route path="/buy-success" element={<QuickScopeSubmitted />} />
             </Route>
 
             <Route path="/" element={<MainLayout />}>

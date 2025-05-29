@@ -20,12 +20,11 @@
   padding: 7px 12px;
   border-radius: 8px;
   border: 1px solid transparent;
-  border-bottom: 1px solid var(--Border);
+
   background: var(--Primitive-800);
+  width: 100%;
 }
-.textareaContainer {
-  padding: 0;
-}
+
 .lsm {
   padding: 8px 14px;
 }
@@ -40,11 +39,7 @@
   padding: 8px 12px;
 
   position: relative;
-}
-.ctrlK {
-  padding: 7.5px 12px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  width: 100%;
 }
 
 .searchIconInputContainer .close {
@@ -60,7 +55,7 @@
   color: var(--Primitive-600);
 }
 .input {
-  color: var(--Primitive-400);
+  color: var(--Primitive-50);
   background: transparent;
   font-size: 14px;
   font-style: normal;
@@ -73,9 +68,7 @@
   height: 100%;
   resize: none;
 }
-.textarea {
-  padding: 8px 12px;
-}
+
 .lsm .input {
   font-size: 15px;
   line-height: 160px;
@@ -87,25 +80,4 @@
   color: var(--Primitive-500);
   cursor: pointer;
   font-size: 18px;
-}
-.eye {
-  cursor: pointer;
-  font-size: 18px;
-  color: var(--Primitive-400);
-}
-.ctrlKContainer {
-  text-align: center;
-
-  color: var(--Primitive-400);
-  font-size: 12px;
-  line-height: 100%;
-  font-weight: 500;
-  background: var(--Base-White);
-  border: 1px solid var(--Primitive-100);
-  padding: 2px 4px;
-  white-space: nowrap;
-}
-
-.ctrlKContainer:hover {
-  transform: none;
 }

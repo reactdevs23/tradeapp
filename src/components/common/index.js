@@ -18,6 +18,12 @@ import CircularCheckBox from "./CircularCheckBox/CircularCheckBox";
 import DateTimeInput from "./DateTimeInput/DateTimeInput";
 
 import SellBox from "./SellBox/SellBox";
+import Wrapper from "./Wrapper/Wrapper";
+import NumberInput from "./NumberInput/NumberInput";
+import NumberInputContainer from "./NumberInputContainer/NumberInputContainer";
+import ToggleContainer from "./ToggleContainer/ToggleContainer";
+import Tabs from "./Tabs/Tabs";
+import AmountInput from "./AmountInput/AmountInput";
 export {
   Button,
   Heading,
@@ -34,4 +40,10 @@ export {
   CircularCheckBox,
   DateTimeInput,
   SellBox,
+  Wrapper,
+  NumberInput,
+  NumberInputContainer,
+  ToggleContainer,
+  Tabs,
+  AmountInput,
 };

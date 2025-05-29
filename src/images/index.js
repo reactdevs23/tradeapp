@@ -21,6 +21,7 @@ import MarketsIcon from "./navIcon/MarketsIcon";
 import WalletIcon from "./navIcon/WalletIcon";
 import TradeIcon from "./navIcon/TradeIcon";
 import AccountIcon from "./navIcon/AccountIcon";
+import SnipperIcon from "./navIcon/SnipperIcon";
 
 // send
 import smallQrCode from "./send/smallQrCode.svg";
@@ -63,6 +64,21 @@ import onboardingSecond from "./onBoarding/onBoardingSecond.png";
 import onboardingThird from "./onBoarding/onBoardingThird.png";
 import onboardingFour from "./onBoarding/onBoardingFour.png";
 
+// snipper
+
+import buyIcon from "./snipper/buyIcon.png";
+import sellIcon from "./snipper/sellIcon.png";
+import checkingSettingsIcon from "./snipper/checkingSettings.svg";
+import timeIcon from "./snipper/clockIcon.svg";
+import safetyIcon from "./snipper/safetyIcon.png";
+import searchIcon from "./snipper/searchIcon.svg";
+import metaMaskLogo from "./snipper/metaMaskIcon.png";
+import bnbIcon from "./snipper/binanceIcon.png";
+import successIcon from "./snipper/success.svg";
+import faildIcon from "./snipper/faildIcon.svg";
+import retryIcon from "./snipper/retryIcon.svg";
+import zarpImg from "./snipper/zarpImg.png";
+
 export {
   logo,
   // wallet
@@ -83,6 +99,7 @@ export {
   HomeIcon,
   MarketsIcon,
   TradeIcon,
+  SnipperIcon,
   WalletIcon,
   AccountIcon,
 
@@ -128,4 +145,18 @@ export {
   onboardingSecond,
   onboardingThird,
   onboardingFour,
+
+  // snipper
+  buyIcon,
+  sellIcon,
+  searchIcon,
+  checkingSettingsIcon,
+  timeIcon,
+  metaMaskLogo,
+  safetyIcon,
+  bnbIcon,
+  successIcon,
+  faildIcon,
+  retryIcon,
+  zarpImg,
 };

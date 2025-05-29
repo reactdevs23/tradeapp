@@ -31,7 +31,7 @@ const Cart = () => {
           </div>
           <CircularProgressBar
             progress={20}
-            progressColor="#494B4C"
+            progressColor=" #494B4C"
             bgColor="#1C1E1F"
           />
         </div>
@@ -43,7 +43,7 @@ const Cart = () => {
             <Text sm medium primitive200 textRight>
               {selectedNetwork?.name}
             </Text>
-            <img src={selectedNetwork?.name} alt="#" className={classes.logo} />
+            <img src={selectedNetwork?.logo} alt="#" className={classes.logo} />
           </div>
         </div>
         <div className={classes.item}>

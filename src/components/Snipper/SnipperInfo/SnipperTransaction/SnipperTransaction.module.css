@@ -1,0 +1,52 @@
+.header {
+  border-radius: 10px;
+  background: var(--Primitive-900);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+.spaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 4px;
+}
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+}
+
+.icon {
+  max-width: 28px;
+  min-width: 28px;
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+}
+.viewOnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.viewOn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.logo {
+  max-width: 20px;
+  min-width: 20px;
+  width: 100%;
+  border-radius: 4px;
+  background: var(--Primitive-900);
+  aspect-ratio: 1/1;
+  display: block;
+}
+.line:last-child {
+  display: none;
+}

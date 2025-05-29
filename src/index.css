@@ -80,6 +80,9 @@ button:hover {
 .space {
   padding: 0 16px;
 }
+.space2 {
+  padding: 0 8px;
+}
 .highlight {
   color: var(--Primitive-Default);
   font-weight: 500;

@@ -34,7 +34,6 @@ const SelectAssets = ({
           value={searchValue}
           setValue={setSearchValue}
           placeholder="Search"
-          wrapperClassName={classes.inputWrapper}
           className={classes.input}
         />
       </div>

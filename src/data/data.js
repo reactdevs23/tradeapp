@@ -7,7 +7,241 @@ import {
   solanaLogo,
   usdtLogo,
 } from "@/images";
+import {
+  timeIcon,
+  searchIcon,
+  checkingSettingsIcon,
+  successIcon,
+  faildIcon,
+  retryIcon,
+} from "@/images";
+import { sellIcon, buyIcon, metaMaskLogo, bnbIcon } from "@/images";
+const snipperTransaction = [
+  {
+    type: "Sold",
 
+    amount: "0.01",
+    token: "SOL",
+    platform: "Binance",
+    time: "7:58:48.325 PM",
+    viewOn: [
+      {
+        logo: metaMaskLogo,
+        name: "Dexscreener",
+        link: "#",
+      },
+      {
+        logo: bnbIcon,
+        name: "BNB",
+        link: "",
+      },
+    ],
+  },
+  {
+    type: "Bought",
+
+    amount: "0.01",
+    token: "SOL",
+    platform: "Binance",
+    time: "7:58:48.325 PM",
+    viewOn: [
+      {
+        logo: metaMaskLogo,
+        name: "Dexscreener",
+        link: "#",
+      },
+      {
+        logo: bnbIcon,
+        name: "BNB",
+        link: "",
+      },
+    ],
+  },
+  {
+    type: "Sold",
+
+    amount: "0.01",
+    token: "SOL",
+    platform: "Binance",
+    time: "7:58:48.325 PM",
+    viewOn: [
+      {
+        logo: metaMaskLogo,
+        name: "Dexscreener",
+        link: "#",
+      },
+      {
+        logo: bnbIcon,
+        name: "BNB",
+        link: "",
+      },
+    ],
+  },
+  {
+    type: "Bought",
+
+    amount: "0.01",
+    token: "SOL",
+    platform: "Binance",
+    time: "7:58:48.325 PM",
+    viewOn: [
+      {
+        logo: metaMaskLogo,
+        name: "Dexscreener",
+        link: "#",
+      },
+      {
+        logo: bnbIcon,
+        name: "BNB",
+        link: "",
+      },
+    ],
+  },
+  {
+    type: "Sold",
+
+    amount: "0.01",
+    token: "SOL",
+    platform: "Binance",
+    time: "7:58:48.325 PM",
+    viewOn: [
+      {
+        logo: metaMaskLogo,
+        name: "Dexscreener",
+        link: "#",
+      },
+      {
+        logo: bnbIcon,
+        name: "BNB",
+        link: "",
+      },
+    ],
+  },
+  {
+    type: "Bought",
+
+    amount: "0.01",
+    token: "SOL",
+    platform: "Binance",
+    time: "7:58:48.325 PM",
+    viewOn: [
+      {
+        logo: metaMaskLogo,
+        name: "Dexscreener",
+        link: "#",
+      },
+      {
+        logo: bnbIcon,
+        name: "BNB",
+        link: "",
+      },
+    ],
+  },
+  {
+    type: "Sold",
+
+    amount: "0.01",
+    token: "SOL",
+    platform: "Binance",
+    time: "7:58:48.325 PM",
+    viewOn: [
+      {
+        logo: metaMaskLogo,
+        name: "Dexscreener",
+        link: "#",
+      },
+      {
+        logo: bnbIcon,
+        name: "BNB",
+        link: "",
+      },
+    ],
+  },
+];
+
+const logEntries = [
+  [
+    {
+      icon: timeIcon,
+      time: "14.03:22",
+      info: { label: "Watching contract", content: "0x6f_8aC4" },
+      token: "$BLAZE",
+    },
+    {
+      icon: searchIcon,
+      time: "14.03:22",
+      info: { label: "Liquidity pool detected", content: "10 BNB" },
+    },
+    {
+      icon: checkingSettingsIcon,
+      time: "14.03:22",
+      info: { label: "Checking buy conditions", content: "" },
+    },
+    {
+      icon: successIcon,
+      time: "14.03:22",
+      info: { label: "Sniping initiated - 0.25 BNB @ 5% slippage" },
+    },
+    {
+      icon: successIcon,
+      time: "14.03:22",
+      info: { label: "Buy successful", content: "Tx: 0xf8b2...df7a" },
+    },
+  ],
+  [
+    {
+      icon: timeIcon,
+      time: "14.03:22",
+      info: { label: "Watching contract", content: "0x9f...3fb9" },
+      token: "$RUSH",
+    },
+    {
+      icon: searchIcon,
+      time: "14.03:22",
+      info: { label: "Liquidity found", content: "5 BNB – below minimum set" },
+    },
+    {
+      icon: faildIcon,
+      time: "14.03:22",
+      info: { label: "Skipped - Liquidity threshold not met" },
+    },
+  ],
+  [
+    {
+      icon: timeIcon,
+      time: "14.03:22",
+      info: { label: "Auto-Retry enabled for", token: " $MOONRACE" },
+    },
+    {
+      icon: retryIcon,
+      time: "14.03:22",
+      info: { label: "Retrying with updated slippage:", content: " 12%" },
+    },
+    {
+      icon: successIcon,
+      time: "14.03:22",
+      info: { label: "Buy successful", content: "Tx: 0xe33d...9ff3" },
+    },
+  ],
+  [
+    {
+      icon: timeIcon,
+      time: "14.03:22",
+      info: { label: "Watching contract", content: "0xaa_1092" },
+      token: "$MOONRACE",
+    },
+    {
+      icon: searchIcon,
+      time: "14.03:22",
+      info: { label: "Slippage too low (3%) – recommended 10%" },
+    },
+    {
+      icon: faildIcon,
+      time: "14.03:22",
+      info: { label: "Tx failed", content: "INSUFFICIENT OUTPUT AMOUNT" },
+    },
+  ],
+];
 const cryptoAssets = [
   {
     logo: usdtLogo,
@@ -207,7 +441,7 @@ const transactionTypes = [
 ];
 const transactionsData = [
   {
-    type: "Buy",
+    type: "Bought",
     pair: {
       from: { symbol: "USDT", logo: usdtLogo },
       to: { symbol: "ETH", logo: ethereumLogo },
@@ -221,7 +455,7 @@ const transactionsData = [
     network: { name: "Ethereum", logo: ethereumLogo },
   },
   {
-    type: "Sell",
+    type: "Sold",
     pair: {
       from: { symbol: "ETH", logo: ethereumLogo },
       to: { symbol: "USDT", logo: usdtLogo },
@@ -235,7 +469,7 @@ const transactionsData = [
     network: { name: "Solana", logo: solanaLogo },
   },
   {
-    type: "Buy",
+    type: "Bought",
     pair: {
       from: { symbol: "LTC", logo: ltcLogo },
       to: { symbol: "BTC", logo: bitCoinLogo },
@@ -249,7 +483,7 @@ const transactionsData = [
     network: { name: "Ethereum", logo: ethereumLogo },
   },
   {
-    type: "Buy",
+    type: "Bought",
     pair: {
       from: { symbol: "USDT", logo: usdtLogo },
       to: { symbol: "SOL", logo: solanaLogo },
@@ -263,7 +497,7 @@ const transactionsData = [
     network: { name: "Solana", logo: solanaLogo },
   },
   {
-    type: "Sell",
+    type: "Sold",
     pair: {
       from: { symbol: "ETH", logo: ethereumLogo },
       to: { symbol: "LTC", logo: ltcLogo },
@@ -277,7 +511,7 @@ const transactionsData = [
     network: { name: "Ethereum", logo: ethereumLogo },
   },
   {
-    type: "Buy",
+    type: "Bought",
     pair: {
       from: { symbol: "USDT", logo: usdtLogo },
       to: { symbol: "ETH", logo: ethereumLogo },
@@ -291,7 +525,7 @@ const transactionsData = [
     network: { name: "Ethereum", logo: ethereumLogo },
   },
   {
-    type: "Sell",
+    type: "Sold",
     pair: {
       from: { symbol: "ETH", logo: ethereumLogo },
       to: { symbol: "USDT", logo: usdtLogo },
@@ -305,7 +539,7 @@ const transactionsData = [
     network: { name: "Solana", logo: solanaLogo },
   },
   {
-    type: "Buy",
+    type: "Bought",
     pair: {
       from: { symbol: "LTC", logo: ltcLogo },
       to: { symbol: "BTC", logo: bitCoinLogo },
@@ -319,7 +553,7 @@ const transactionsData = [
     network: { name: "Solana", logo: solanaLogo },
   },
   {
-    type: "Buy",
+    type: "Bought",
     pair: {
       from: { symbol: "USDT", logo: usdtLogo },
       to: { symbol: "SOL", logo: solanaLogo },
@@ -452,6 +686,7 @@ const invitedList = [
 ];
 
 export {
+  logEntries,
   networks,
   wallets,
   cryptoAssets,
@@ -461,4 +696,5 @@ export {
   transactionsData,
   partners,
   invitedList,
+  snipperTransaction,
 };

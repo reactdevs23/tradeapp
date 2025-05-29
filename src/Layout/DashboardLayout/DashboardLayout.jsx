@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/Layout/DashboardLayout/Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import classes from "./DashboardLayout.module.css";
 import clsx from "clsx";
